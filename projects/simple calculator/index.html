@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!--Inicio Conteudo-->
+    <h1>Simple Calculator</h1>
+    <div class="box">
+        <input type="number" name="txt1" id="txt1"> <p>Adição</p>
+
+        <input type="number" name="txt2" id="txt2">
+        <p>=</p>
+        <p id="resultado">Resultado</p>
+    </div>
+    <input onclick="somar()" class="calc" type="button" value="Calcular">
+
+    <!--Subtrair-->
+    <div class="box2">
+        <input type="number" name="stxt1" id="stxt1"> <p>Subtração</p>
+
+        <input type="number" name="stxt2" id="stxt2">
+        <p>=</p>
+        <p id="sresultado">Resultado</p>
+    </div>
+    <input onclick="subtrair()" class="calc" type="button" value="Calcular">
+
+    <!--Multiplicação-->
+
+    <div class="box3">
+        <input type="number" name="mtxt1" id="mtxt1"> <p>Multiplicação</p>
+
+        <input type="number" name="mtxt2" id="mtxt2">
+        <p>=</p>
+        <p id="mresultado">Resultado</p>
+    </div>
+    <input onclick="multiplicar()" class="calc" type="button" value="Calcular">
+
+    <!--Divisão-->
+
+    <div class="box4">
+        <input type="number" name="dtxt1" id="dtxt1"> <p>Divisão</p>
+
+        <input type="number" name="dtxt2" id="dtxt2">
+        <p>=</p>
+        <p id="dresultado">Resultado</p>
+    </div>
+    <input onclick="dividir()" class="calc" type="button" value="Calcular">
+    <!--Final Conteudo-->
+
+    <!--Inicio do Javascript-->
+    
+    <script>
+        function somar(){
+            var t1 = document.getElementById('txt1')
+            var t2 = document.getElementById('txt2')
+            var r = document.getElementById('resultado')
+            var n1 = Number(txt1.value)
+            var n2 = Number(txt2.value)
+            var soma = n1 + n2
+            
+            r.innerText = soma
+        }
+
+        function subtrair(){
+            var t1 = document.getElementById('stxt1')
+            var t2 = document.getElementById('stxt2')
+            var r = document.getElementById('sresultado')
+            var n1 = Number(stxt1.value)
+            var n2 = Number(stxt2.value)
+            var result = n1 - n2
+            
+            r.innerText = result
+        }
+
+        function multiplicar(){
+            var t1 = document.getElementById('mtxt1')
+            var t2 = document.getElementById('mtxt2')
+            var r = document.getElementById('mresultado')
+            var n1 = Number(mtxt1.value)
+            var n2 = Number(mtxt2.value)
+            var result = n1 * n2
+            
+            r.innerText = result
+        }
+
+        function dividir(){
+            var t1 = document.getElementById('dtxt1')
+            var t2 = document.getElementById('dtxt2')
+            var r = document.getElementById('dresultado')
+            var n1 = Number(dtxt1.value)
+            var n2 = Number(dtxt2.value)
+            var result = n1 / n2
+            
+            r.innerText = result
+        }
+    </script>
+    <!--Final Javascript-->
+
+
+    <!--Coded by IgorLucasDev-->
+</body>
+</html>

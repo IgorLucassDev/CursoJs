@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: rgb(17, 17, 17);
+}
+
+.box{
+    padding: 20px;
+    background-color: rgb(6, 56, 56);
+    display: flex;
+}
+
+.box > input{
+    border: none;
+    border-radius: 12px;
+    padding: 15px;
+    width: 100px;
+    outline: none
+}
+
+.box > p{
+    color: wheat;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.calc{
+    margin-top: 20px;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 15px;
+}
+
+/* Subtrair */
+
+.box2{
+    margin-top: 15px;
+    padding: 20px;
+    background-color: rgb(56, 6, 31);
+    display: flex;
+}
+
+.box2 > input{
+    border: none;
+    border-radius: 12px;
+    padding: 15px;
+    width: 100px;
+    outline: none
+}
+
+.box2 > p{
+    color: wheat;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Multiplicar */
+
+.box3{
+    margin-top: 15px;
+    padding: 20px;
+    background-color: rgb(56, 30, 6);
+    display: flex;
+}
+
+.box3 > input{
+    border: none;
+    border-radius: 12px;
+    padding: 15px;
+    width: 100px;
+    outline: none
+}
+
+.box3 > p{
+    color: wheat;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Dividir */
+
+.box4{
+    margin-top: 15px;
+    padding: 20px;
+    background-color: rgb(6, 38, 56);
+    display: flex;
+}
+
+.box4 > input{
+    border: none;
+    border-radius: 12px;
+    padding: 15px;
+    width: 100px;
+    outline: none
+}
+
+.box4 > p{
+    color: wheat;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/*Coded by IgorLucasDev*/
+
